@@ -19,4 +19,6 @@ public interface StudentDao {
 
 	List<Student> getStudentintherangeofdate(Date date1, Date date2);
 
+	List<Student> getAllStudents();
+
 }

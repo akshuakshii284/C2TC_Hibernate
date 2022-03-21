@@ -52,6 +52,15 @@ public class StudentImpl implements StudentService{
 		List<Student> list=sd.getStudentintherangeofdate(date1,date2);
 		return list;
 	}
+
+
+
+	@Override
+	public List<Student> getAllStudents() {
+		// TODO Auto-generated method stub
+		List<Student> list=sd.getAllStudents();
+		return list;
+	}
 	
 
 }

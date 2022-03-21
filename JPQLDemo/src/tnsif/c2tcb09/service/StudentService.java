@@ -13,4 +13,6 @@ public Long getcount();
 public List<Student>getStudentbytrainer_name(String string);
 
 public List<Student> getStudentintherangeofdate(Date date1, Date date2);
+
+public List<Student> getAllStudents();
 }

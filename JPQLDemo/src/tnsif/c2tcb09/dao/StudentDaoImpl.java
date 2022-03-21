@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import tnsif.c2tcb09.entity.Student;
@@ -56,6 +57,14 @@ public class StudentDaoImpl implements StudentDao{
 		t.setParameter("date2",date2);
 	    List<Student> list=t.getResultList();
 		return list;
+	}
+	@Override
+	public List<Student> getAllStudents() {
+		// TODO Auto-generated method stub
+		Query query=entityManager.createNamedQuery("getAllStudents");
+		List<Student> list=query.getResultList();
+		return list;
+		
 	}
 	
 	}
